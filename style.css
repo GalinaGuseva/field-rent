@@ -1,0 +1,144 @@
+*{   
+    box-sizing: border-box;
+}
+body {
+    background: #F4F7F0; 
+    font-family: 'Play', sans-serif; 
+    display: flex; 
+    flex-direction: column; 
+    width: 100%;
+    height: 100vh;
+    margin: 0;    
+}
+
+li {
+    list-style: none;
+  }
+
+.header {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0;    
+}
+
+.logo {
+    margin: 0 auto;
+    width: 50%;     
+}
+
+
+.footer {
+    background: #D5E2C6;   
+    display: flex;
+}
+
+.bottom {
+    width: 65%;
+    margin: 0 auto;
+    padding: 0 20px 20px;
+}
+
+.fields {
+    background: #E3E7D8;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3,  1fr);
+    margin: 0;
+    padding: 20px;
+    gap: 10px;   
+}
+
+.field {
+    display: flex;   
+    min-height: 250px;
+    width: 100%;
+    height: 100%; 
+    margin: 0;
+    object-fit: contain;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;   
+    object-position: center; 
+    position: relative;  
+} 
+
+
+.field1 {
+    background-image: url('img/field_1.svg');   
+}   
+
+.field2 {
+    background-image: url('img/field_2.svg');    
+}
+
+.field3 {
+    background-image: url('img/field_3.svg');    
+}
+
+.field4 {
+    background-image: url('img/field_4.svg');    
+}
+
+.field5 {
+    background-image: url('img/field_5.svg');  
+}
+
+.field6 {
+    background-image: url('img/field_6.svg');     
+}
+
+.ads__play {
+  position: absolute;
+  right: 10px;
+  top: 23%;  
+  width: 65%;  
+}
+
+.ads__ready {
+    position: absolute;
+    right: 10px;
+    top: 57%;
+    bottom: 0;
+    width: 65%;        
+}
+
+.ads__text {
+    font-family: 'Times New Roman'; 
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding:  0 10px 10px;
+    margin: 0;     
+}
+
+
+@media screen and (min-width: 1200px) {
+    .ads__text {     
+      font-size: 20px;     
+  }
+}
+
+@media screen and (min-width: 1601px) {
+    .ads__text {     
+      font-size: 30px;     
+  }
+}
+
+@media screen and (min-width: 2000px) {
+    .ads__text {     
+      font-size: 40px;     
+  }
+}
+
+@media screen and (min-width: 3000px) {
+    .ads__play {        
+        top: 30%;  
+        width: 65%;  
+      }
+
+    .ads__text {     
+      font-size: 60px;     
+  }
+}
